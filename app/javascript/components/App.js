@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+
+
 import { Link, Route, Routes } from 'react-router-dom';
 import Greeting from './Greeting';
 import Home from './Home';
 
 const App = () => {
+
   return (<div>
     {/* nav */}
     <nav>
