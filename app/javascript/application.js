@@ -4,12 +4,14 @@ import "./controllers"
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from "./components/App";
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
-  return (<h1>Hello World!</h1>);
-}
 
 ReactDOM.render(
-  <App />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+  ,
   document.getElementById('root'),
 );

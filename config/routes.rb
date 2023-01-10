@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "messages#index"
   get 'api/random-greeting', to: 'messages#random_greeting'
+  get '*path', to: 'messages#index', via: :all
 end
